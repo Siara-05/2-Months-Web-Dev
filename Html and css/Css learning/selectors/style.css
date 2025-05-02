@@ -1,0 +1,29 @@
+
+*{
+    margin: o;
+    padding:0;
+    box-sizing:border-box;
+    font-family: 'Gilroy';
+}
+
+html,body {
+    height: 100%;
+    width: 100%;
+}
+
+
+.para{
+    color: brown;
+    font-size: medium;
+}
+
+#btn{
+    background-color: red;
+    color: aliceblue;  
+}
+
+#abtn{
+    background-color: black;
+    color: azure;
+    box-sizing: border-box;
+}

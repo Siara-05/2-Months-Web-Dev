@@ -1,0 +1,37 @@
+<html>
+    <head>
+        <title> Greetings</title>
+        <style>
+
+        </style>
+        <script>
+
+               //Getting the curret time
+           const currentHour = new Date();getHours();
+
+               //if else statements
+           let greeting;
+           
+           if (currentHour<12) {
+            greeting = "Good Morning!";
+           }
+
+           else if (currentHour<18) {
+            greeting = "Good Aternoon!";
+           }
+           
+           else {
+            greeting = "Good Evening!"
+           }
+
+           document.write('<h1>${greeting}</h1>');
+           alert("<h1>${greeting}</h1>");
+
+
+        </script>
+    </head>
+
+    <body>
+          
+    </body>
+</html>

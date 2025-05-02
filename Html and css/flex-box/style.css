@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: cursive;
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+
+}
+
+
+#box{
+    padding-top: 50px ;
+    justify-content: space-around;
+    display: flex;
+    width: 500px;
+    height: 500px;
+    background-color: gray;
+}
+
+
+#box1{
+    
+    width: 100px;
+    height: 100px;
+    background: #a0681a;
+} 
+
+
+#box2{
+
+    width: 130px;
+    height: 110px;
+    background: #111777;
+} 
+
+#box3{
+
+    width: 100px;
+    height: 100px;
+    background: #033845;
+} 

@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: cursive;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+
+#main{
+    width: 20%;
+    height: 40%;
+    padding: 15px;
+    background: #910000;
+}
+
+#img{
+    width: 50%;
+    height: 50%;
+    margin: 20px;
+    background-image: url("WIN_20240528_12_39_30_Pro.jpg");
+    background-size:cover ;
+    background-position: top;
+}
