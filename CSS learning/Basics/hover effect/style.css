@@ -1,0 +1,83 @@
+
+/*@import url(https://fonts.google.com/noto/specimen/Noto+Serif?query=serif);*/
+
+
+/* for body */
+html,body{
+    display: flex;
+    justify-content: center;
+    align-items: center; /* aligning button in centre*/
+    background-color: lch(4.16% 40.87 301.41);
+    overflow: hidden; /* prevents scrolling*/
+    transform: scale(1.5);
+    height: 100vh;  /* to ensure proper centering */
+    margin: 0; /*removes defult margin*/
+}
+
+/* for button */
+
+.btn{
+    padding: 15px 35px; /* height and width of btn*/
+    border: none;
+    border-radius: 12px;  /* rounding the corner of btn*/
+    outline: none;
+    box-sizing: 20px;
+    color: rgb(255, 255, 255);
+    cursor: pointer;  /* changing the mouse cursor to hand icon when hovering through btn*/
+    position: relative;
+    z-index: 0; /* setting the stacking order of btn*/
+    background-color: #0b1478;
+}
+
+.btn::before{
+    will-change: transform, filter;
+}
+
+.btn::after{
+    content: "";
+    z-index: -1;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #0b1478;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+
+
+/* for glowing effect*/
+.btn::before{
+    content: "";
+    background: linear-gradient(
+        45deg,
+         #FF0000, #FF7300, #FFFB00, #48FF00,
+         #00FFD5, #002BFF, #FF00CB, #FF0000
+    );
+    position: absolute;
+    top: -2px;
+    left: -1px;
+    background-size: 600%;
+    z-index: -1;
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    filter: blur(10px);
+   
+
+
+    animation: glowing 20s linear infinite;
+}
+
+
+
+/* @keyframes glowing (
+    0% {  background-position : 0 0;}
+    50% { background-position: 400% 0;}
+    100% { background-position : 0 0;}
+)*/
+
+@keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
+}

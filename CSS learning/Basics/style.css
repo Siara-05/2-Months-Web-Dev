@@ -1,0 +1,23 @@
+
+*{
+    margin: o;
+    padding:0;
+    box-sizing:border-box;
+    font-family: 'Gilroy';
+}
+
+html,body {
+    height: 100%;
+    width: 100%;
+}
+
+button{
+    box-sizing: border-box;
+    font-size: large;
+    background-color: brown;
+    color: aliceblue;
+}
+
+#btn{
+    color: rgb(105, 2, 2);
+}
