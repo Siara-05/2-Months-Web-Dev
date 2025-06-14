@@ -1,0 +1,173 @@
+
+
+/* Google Font Import */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+
+/* Universal Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* Includes padding in element dimensions */
+  font-family: 'Poppins', sans-serif; /* Default font stack */
+  text-decoration: none; /* Removes underline from links */
+  scroll-behavior: smooth; /* Smooth scrolling */
+  color: aliceblue; /* Default text color */
+}
+
+/* Body Styling */
+body{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: rgb(30, 26, 39);
+}
+
+
+/* For the entire form */
+.container{    
+    position: relative;
+    width: 750px;
+    height: 450px;
+    border: 2px solid rgb(142, 18, 65);
+    box-shadow: 0 0 25px  rgb(142, 18, 65);
+    border-radius: 3%;
+}
+
+/* For the login form container */
+.container .form-box {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.form-box.Login{
+    left: 0;
+    padding: 0 10px;
+}
+
+.form-box h2{  
+    font-size: 32px;
+    text-align: center;
+}
+
+.form-box .input-box{
+    position: relative;
+    height:auto;
+    width: 100%;
+    margin-top: 25px;
+}
+
+
+/* input box styling */
+.input-box input{
+    height: 100%;
+    width: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size:16px ;
+    color: aliceblue;
+    font-weight: 600;
+    border-bottom: 2px solid white;
+    padding-right: 23px;
+    transition: .5s;
+}
+
+.input-box label{
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    font-size:16px;
+    color: aliceblue;
+    transition: .5s;
+}
+
+
+.input-box input:focus ~ label,  /* Labels start centered inside inputs (top: 50%). */
+.input-box input:valid ~ label{
+    top: -5px;
+    color: rgb(142, 18, 65);
+}
+
+/* Input borders change color on focus/valid */
+.input-box input:focus ,
+.input-box input:valid {
+   border-bottom: 2px solid  rgb(142, 18, 65);
+ 
+}
+/* Icons change color on focus/valid */
+.input-box i{
+    position: absolute;
+    top: 50%;
+    right: 0;
+    font-size: 18px;
+    transform: translateY(-50%);
+    transition: .5s;
+}
+
+/* Icon Color Change */
+.input-box input:focus ~ i,
+.input-box input:valid ~ i{
+    color: rgb(142, 18, 65);
+}
+
+.btn{
+    position: relative;
+    height: 45px;
+    width: 100%;
+    background: transparent;
+    font-size: 16px;
+    border-radius: 40px; /* Rounded ends */
+    cursor: pointer;
+    font-weight: 600;
+    border: 2px solid rgb(142, 18, 65);
+    overflow: hidden;
+    z-index: 1;
+    transition: color 0.3s; /* Smooth color change on hover */
+}
+
+.btn::before{
+    content: "";
+    position: absolute;
+    height: 300%; /* Taller than button */
+    width: 100%;
+    background: linear-gradient(rgb(30, 26, 39), rgb(142, 18, 65),rgb(30, 26, 39), rgb(142, 18, 65));
+    top: -100%;  /* Starts above button */
+    left: 0;
+    z-index: -1; /* Behind button text */
+    transition: .5s;
+}
+
+.btn:hover:before{
+    top: 0;  /* Slides gradient down */
+}
+
+.btn:hover {
+    color: white; /* Ensures text remains visible */
+}
+
+/* Registration Link Styling */
+.regi-link{
+    font-size: 14px;
+    text-align: center;
+    margin: 20px 0 10px; /* Top, Right/Bottom, Left */
+}
+
+/* Link Styling */
+.regi-link a{
+    text-decoration: none;
+    color: rgb(142, 18, 65);
+    font-weight: 600;
+}
+
+/* Link Hover Effect */
+.regi-link a:hover{
+    text-decoration: underline; /* Underline on hover */
+}
