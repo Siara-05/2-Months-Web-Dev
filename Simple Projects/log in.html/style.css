@@ -21,7 +21,7 @@ body{
     justify-content:center;
     align-items: center;
     min-height: 100vh;
-    background-color: rgb(30, 26, 39);
+     background-color: rgb(30, 26, 39); /* Applying background color */
 }
 
 
