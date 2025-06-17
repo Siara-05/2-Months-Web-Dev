@@ -53,7 +53,7 @@ html,body{
         45deg,
          #FF0000, #FF7300, #FFFB00, #48FF00,
          #00FFD5, #002BFF, #FF00CB, #FF0000
-    );
+        );
     position: absolute;
     top: -2px;
     left: -1px;
@@ -69,7 +69,7 @@ html,body{
 }
 
 
-
+/* seondary trying */
 /* @keyframes glowing (
     0% {  background-position : 0 0;}
     50% { background-position: 400% 0;}
